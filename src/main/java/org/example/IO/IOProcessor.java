@@ -38,9 +38,9 @@ public void writeSouvenirs(SouvenirList souvenirs) {
             Manufacturer[] manufacturs = (Manufacturer[]) ois.readObject();
             return manufacturs;
         } catch (IOException e) {
-            System.out.println("File Read ERROR!");
+            System.out.println("manufacturers.dat Read ERROR!");
         } catch (ClassNotFoundException e) {
-            System.out.println("File Not Found!");
+            System.out.println("manufacturers.dat Not Found!");
         }
         return new Manufacturer[0];
     }
@@ -51,9 +51,9 @@ public void writeSouvenirs(SouvenirList souvenirs) {
             Souvenir[] souvs = (Souvenir[]) ois.readObject();
             return souvs;
         } catch (IOException e) {
-            System.out.println("File Read ERROR!");
+            System.out.println("souvenirs.dat Read ERROR!");
         } catch (ClassNotFoundException e) {
-            System.out.println("File Not Found!");
+            System.out.println("souvenirs.dat Not Found!");
         }
         return new Souvenir[0];
     }
@@ -64,9 +64,9 @@ public void writeSouvenirs(SouvenirList souvenirs) {
             ManufacturerSouvenirPair[] pars = (ManufacturerSouvenirPair[]) ois.readObject();
             return pars;
         } catch (IOException e) {
-            System.out.println("File Read ERROR!");
+            System.out.println("pairs.dat Read ERROR!");
         } catch (ClassNotFoundException e) {
-            System.out.println("File Not Found!");
+            System.out.println("pairs.dat Not Found!");
         }
         return new ManufacturerSouvenirPair[0];
     }
